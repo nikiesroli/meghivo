@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "waltdisney";
+    src: url('waltdisney.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b9455c+0,f6afb1+100 */
+background: rgb(185,69,92); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(185,69,92,1) 0%, rgba(246,175,177,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(185,69,92,1) 0%,rgba(246,175,177,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(185,69,92,1) 0%,rgba(246,175,177,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9455c', endColorstr='#f6afb1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+h1, h2, h3, h4, p {
+    font-family: "waltdisney", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    text-transform: lowercase;
+    font-size: 6em;
+    letter-spacing: 25px;
+    color: white;
+    font-weight: 400;
+    margin: 50px auto 100px auto;
+}
+
+h2 {
+    font-size: 5em;
+    word-spacing: 30px;
+}
+
+h3 {
+    font-size: 3.5em;
+    letter-spacing: 10px;
+}
+
+h3, p {
+    color: white;
+}
+
+p {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+}
+
+.darkPink {
+    color: #a1203d;
+}
+
+.centered {
+    text-align: center;
+}
+
+#starContainer {
+    background-image: url("stars_middle.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#firstPage {
+    background-image: url("castle_2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: repeat(3, 250px);
+    margin-bottom: 100px;
+}
+
+#firstPage > div {
+    grid-row: 3;
+}
+
+#secondPage {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#secondPage > h3 {
+    letter-spacing: 2px;
+}
+
+.mice {
+    width: 100%;
+}
