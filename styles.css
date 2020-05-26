@@ -78,18 +78,15 @@ p {
 }
 
 #firstPage {
-    background-image: url("castle_2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    height: 80vh;
-    display: grid;
-    grid-template-rows: repeat(3, 250px);
-    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    margin: 0 auto 100px auto;
 }
 
-#firstPage > div {
-    grid-row: 3;
+#firstPage > img {
+    width: 50%;
+    height: 50%;
 }
 
 #secondPage {
@@ -103,10 +100,15 @@ p {
 
 .mice {
     width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
 }
+
 
 /* 
 needs breakpoints at 680px  (castle, date)
 450px: h1 margin, <p>, h1 text too big
 
 */
+
